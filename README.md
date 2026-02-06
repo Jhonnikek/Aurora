@@ -1,0 +1,2 @@
+# Aurora
+Simple discord bot 
