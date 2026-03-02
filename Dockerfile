@@ -4,8 +4,10 @@ COPY --from=ghcr.io/astral-sh/uv:0.10.4 /uv /uvx /bin/
 
 WORKDIR /bot
 
-COPY . /bot
+COPY pyproject.toml uv.lock ./
 
-RUN uv sync --locked
+RUN uv sync --frozen --no-dev
+
+COPY . .
 
 CMD [ "uv", "run", "bot.py" ]
