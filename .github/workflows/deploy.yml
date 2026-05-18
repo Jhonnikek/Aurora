@@ -36,7 +36,7 @@ jobs:
           host: ${{ secrets.ORACLE_IP }}
           username: ${{ secrets.ORACLE_USER }}
           key: ${{ secrets.ORACLE_SSH_KEY }}
-          source: "compose.yml"
+          source: "compose.yaml"
           target: "/home/ubuntu/projects/bot-discord"
 
       - name: deploy
