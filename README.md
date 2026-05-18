@@ -128,6 +128,3 @@ docker compose -f compose.dev.yaml up
 
 Building this pipeline required connecting several systems that don't come pre-wired together: configuring OCI network security rules to allow GitHub Actions runners through, setting up GHCR authentication from a workflow, and chaining SCP + SSH steps in the right order so the compose file is updated before the container restarts. The biggest challenge was debugging SSH connectivity between GitHub-hosted runners and OCI — the fix was opening the correct ingress port in the OCI security list and using a correctly scoped SSH key.
 
----
-
-*Part of a broader infrastructure project. See also: [OCI Terraform provisioning repo](#) | [Portfolio](#)*
