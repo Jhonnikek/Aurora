@@ -31,7 +31,7 @@ jobs:
           rags: ghcr.io/Jhonnikek/aurora:latest
 
       - name: compose
-        uses: appleboy/scp-actions@v0.1.7
+        uses: appleboy/scp-action@v0.1.7
         with: 
           host: ${{ secrets.ORACLE_IP }}
           username: ${{ secrets.ORACLE_USER }}
