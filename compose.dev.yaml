@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    container_name: bot_discord_dev
+    volumes:
+      - .:/bot
+    env_file:
+      - .env
