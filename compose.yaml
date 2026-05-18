@@ -1,6 +1,6 @@
 services:
   bot:
-    image: ghcr.io/Jhonnikek/aurora:latest
+    image: ghcr.io/jhonnikek/aurora:latest
     container_name: discord_bot
     restart: always
     env_file:
